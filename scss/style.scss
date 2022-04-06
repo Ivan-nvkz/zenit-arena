@@ -1,0 +1,45 @@
+@import "reset";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "project";
+@import "blocks";
+@import "smart-projects";
+@import "benefits";
+@import "gallery";
+@import "questions";
+
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+.footer {
+   flex: 0 0 auto;
+}
+
+.container {
+   max-width: 1130px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+body {
+   height: 100%;
+   font-family: 'Oswald', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.3;
+   background: #E5E5E5;
+   /* Переводим в REM  */
+   /* делим размер по макуту (16px) */
+   /* на 16 (размер шрифта по умолчанию) */
+   /* font-size: 1rem; */
+}
+
+// font-family: 'Open Sans', sans-serif;
