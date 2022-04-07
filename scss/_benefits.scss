@@ -1,5 +1,6 @@
 .benefits {
-   margin-bottom: 150px;
+   // margin-bottom: 150px;
+   @include adaptiv-value("margin-bottom", 150, 50, 0);
 }
 .benefits__items {
    margin-top: 66px;
@@ -26,7 +27,21 @@
    position: absolute;
    content: url('../images/icons/building.svg');
    top: -70px;
-   left: 55px;
+   // left: 55px;
+   @include adaptiv-value("left", 55, 50, 0);
    width: 60px;
    height: 40px;
+}
+// АДАПТИВ start ====================================================================================================
+
+@media (max-width: 1130px) {
+   .benefits__items{
+      display: flex;
+      justify-content: center;
+   }
+} 
+@media (max-width: 320px){
+   .benefits__info::before {
+     left: 43px;
+   }
 }
